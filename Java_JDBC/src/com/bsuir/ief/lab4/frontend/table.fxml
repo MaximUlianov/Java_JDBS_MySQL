@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.ief.lab4.frontend.TableController">
+   <children>
+      <TableView fx:id="mainTable" layoutX="4.0" prefHeight="433.0" prefWidth="936.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="82.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="139.0" text="Name" />
+            <TableColumn fx:id="deanCol" prefWidth="182.0" text="Dean" />
+            <TableColumn fx:id="specCol" prefWidth="114.0" text="Spec. quantity" />
+            <TableColumn fx:id="studCol" prefWidth="114.0" text="Stud. quantity" />
+            <TableColumn fx:id="teachCol" prefWidth="123.0" text="Teach. quantity" />
+            <TableColumn fx:id="adrCol" prefWidth="181.0" text="Adress" />
+        </columns>
+      </TableView>
+      <Button fx:id="addBtn" layoutX="23.0" layoutY="439.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="151.0" style="-fx-background-color: #fafafa;" text="Add faculty" textFill="#4d4c94">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16139d" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="827.0" layoutY="440.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: #fafafa;" text="Delete row" textFill="#16139d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16139d" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </Button>
+      <Button fx:id="editBtn" layoutX="659.0" layoutY="440.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #fafafa;" text="Edit row" textFill="#16139d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16139d" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
